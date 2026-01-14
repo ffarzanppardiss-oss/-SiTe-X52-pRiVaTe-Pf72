@@ -1,0 +1,302 @@
+@import url('https://googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family:'Poppins', sans-serif;
+}
+
+:root {
+  --bg-color: #F5EDE2;
+  --second-bg-color: #CDBBA8;
+  --text-color: #000000;
+  --main-color: #5A3E2B;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
+/* education section design */
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom: 5rem;
+}
+
+.education .education-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.education-row .education-column {
+  flex: 1 1 40rem;
+}
+
+.education-column .title {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+
+.education-column .education-box {
+  border-left: 2rem solid var(--main-color);
+}
+
+.education-box .education-content {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.education-content .education-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0.8rem;
+  width: 0.3rem;
+  height: 2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
+.education-content .content {
+  position: relative;
+  padding: 1rem;
+  border: .2rem solid var(--main-color);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.education-content .education {
+  position: relative;
+  padding: 1.5rem;
+  border: .2rem solid var(--main-color);
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+}
+
+.education-content .education .year {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  padding-bottom: .5rem;
+}
+
+.education-content .content .year i {
+  padding-right: .5rem;
+}
+
+.education-content .content h3 {
+  font-size: 2rem;
+}
+
+.education-content .content p {
+  font-size: 1.4rem;
+  padding-top: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* skills section design */
+
+/* Reset-ish */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg-color);
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 36px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 36px;
+  letter-spacing: -0.02em;
+}
+.title span { display: inline-block; vertical-align: middle; }
+.title .accent {
+  margin-left: 8px;
+  background: var(--second-bg-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Grid for the two panels */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* Card look (box similar to the photo) */
+.card {
+  border: 2px solid #5A3E2B();
+  padding: 24px;
+  border-radius: 10px;
+  background: var(--second-bg-color);
+  box-shadow: none;
+}
+
+/* Card title */
+.card-title {
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* Label row: skill name + percentage */
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+.skill-label {
+  font-weight: 600;
+  color: #000000;
+}
+.skill-label.highlight {
+  color: #000000; /* subtle highlight for Graphic Design like the photo */
+}
+.skill-percent {
+  font-weight: 700;
+  color: #000000;
+  text-shadow: none;
+  filter: none;
+}
+
+/* Progress bar track */
+.progress {
+  height: 14px;
+  background: #F5EDE2;
+  border-radius: 8px;
+  border: 2px solid #F5EDE2;
+  overflow: hidden;
+}
+
+/* Fill - uses CSS variable --pct set inline in HTML */
+.progress-fill {
+  height: 100%;
+  width: var(--pct, 0%);
+  border-radius: 6px;
+  /* bright inner glow gradient like the neon bars */
+  background: var(--main-color);
+  position: relative;
+  transition: width 1s ease;
+}
+
+/* small inner rounded highlight */
+.progress-fill::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  filter: blur(6px);
+  background: var(--bg-color);
+  transform: translateX(20%);
+  pointer-events: none;
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .title { font-size: 36px; }
+}
+
+/* optional: improve keyboard focus for progress */
+.progress:focus {
+  outline: 3px solid var(--text-color);
+  outline-offset: 3px;
+}
+
